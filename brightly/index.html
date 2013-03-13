@@ -1,0 +1,48 @@
+<html lang="ja">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link href="../css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<style>
+
+		@-webkit-keyframes bright1-animation {
+			0% {-webkit-transform: translate3d(60px, -800px, 0px) rotate(45deg);}
+			50% {-webkit-transform: translate3d(320px, 400px, 0px) rotate(45deg);}
+			100% {-webkit-transform: translate3d(320px, 400px, 0px) rotate(45deg);}
+		}
+
+		#container {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.target {
+			width: 320px;
+			height: 320px;
+			background-color: #000000;
+		}
+
+		.bright1 {
+			position: absolute;
+			width: 50px;
+			height: 500px;
+			background-color: #ffffff;
+			-webkit-transform: rotate(45deg);
+			-webkit-animation: bright1-animation 0.8s ease-out 0s infinite;
+		}
+
+	</style>
+</head>
+<body>
+
+	<section style="margin: 100px;">
+		<div id="container">
+			<div class="target"></div>
+			<div class="bright1"></div>
+		</div>
+	</section>
+
+	<script data-main="main" src="../js/require.js"></script>
+
+</body>
+</html>
